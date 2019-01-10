@@ -8,7 +8,7 @@ var msg = Mustache.render("Hello, {{firstname}} {{lastname}} Kill yourself", {fi
 // handle incoming http request
 function reqHandler(req, res){console.log("We have a server request" + req.url);
     if(req.url === "/" ){
-       res.end("Welcome Now GTFO!!");
+       res.end("This sentence is false!");
     }
     else if(req.url === "/about"){
         res.end("This is the about page how did you get here?")
